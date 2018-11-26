@@ -1,0 +1,60 @@
+/*import google font*/
+@import url('https://fonts.googleapis.com/css?family=Chakra+Petch');
+
+* {
+  /*Will remove all default css styles from page*/
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; /*the border-box allows the padding and margins of
+                          the box to NOT affect the width and height of the
+                          box. Normally, when box-sizing is set to content-box,
+                          padding and margins will ADD to the width and height.
+                          With border-box turned on, width and height will
+                          remain constant.*/
+}
+
+body {
+  background: url('https://i.pinimg.com/236x/7f/f7/d7/7ff7d7655b8eb19509d2ff51121bf17d--sushi-resolutions.jpg');
+}
+
+.main {
+  background: #0a2200;
+  border-radius: 10px;
+  width: 400px;
+  height: 175px;
+  margin: 150px auto; /*sets the position of the box. The first parameter sets
+                      the top and bottom margin, and the auto sets the lef-right
+                      margin, which centers the box*/
+  position: relative; /*divs inside .main will have position starting at top
+                      left of the .main box*/
+  padding: 30px;
+}
+
+.badge {
+  width: 200px;
+  border: 5px solid #0a2200;
+  border-radius: inherit;
+  color: #0a2200;
+  font-family: Chakra Petch;
+  font-weight: bold;
+  background: #ff782e;
+  padding: 5px 10px;
+  position: absolute; /*allows the badge to leave the limits of the main box*/
+  top: -20px;
+  left: 50%; /*centers top left corner of box*/
+  margin-left: -100px;
+}
+.badge p {
+text-align: center;
+}
+
+.clock {
+  background: #d2ffce;
+  text-align: center;
+  color: #0a2200;
+  font-family: Chakra Petch;
+  font-size: 50px;
+  height: 100%;
+  padding-top: 8%;
+  border-radius: inherit;
+}
